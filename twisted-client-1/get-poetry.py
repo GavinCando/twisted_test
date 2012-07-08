@@ -123,7 +123,7 @@ def poetry_main():
     start = datetime.datetime.now()
 
     sockets = [PoetrySocket(i + 1, addr) for i, addr in enumerate(addresses)]
-
+    print socket
     from twisted.internet import reactor
     reactor.run()
 
